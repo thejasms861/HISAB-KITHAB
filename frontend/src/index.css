@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #09090b;
+  /* zinc-950 */
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Fix visible dropdown options */
+option {
+  background-color: #18181b;
+  /* zinc-900 */
+  color: #ffffff;
+}
