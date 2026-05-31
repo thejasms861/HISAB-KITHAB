@@ -167,41 +167,24 @@ Planned enhancements include:
 
 ---
 
-## 📁 Project Structure
-
+--- ## 📁 Project Structure
+text
 HISAB-KITHAB/
-
-├── backend/
-
-│ ├── accounts/
-
-│ ├── customers/
-
-│ ├── transactions/
-
-│ ├── reports/
-
-│ ├── hisabkitab/
-
-│ └── requirements.txt
-
-│
-
-└── frontend/
-
-├── src/
-
-│ ├── components/
-
-│ ├── pages/
-
-│ ├── services/
-
-│ └── ...
-
-├── package.json
-
-└── tailwind.config.js
+├── backend/               # Django REST API Backend
+│   ├── accounts/          # User authentication and management
+│   ├── customers/         # Customer profiles API
+│   ├── transactions/      # Ledger transactions API
+│   ├── reports/           # Financial reporting API
+│   ├── hisabkitab/        # Core Django settings
+│   └── requirements.txt   # Python dependencies
+└── frontend/              # React/Vite Frontend
+    ├── src/
+    │   ├── components/    # Reusable React components
+    │   ├── pages/         # Application views (Dashboard, Customers, etc.)
+    │   ├── services/      # Axios API configuration & endpoints
+    │   └── ...
+    ├── package.json       # Node.js dependencies
+    └── tailwind.config.js # Tailwind CSS configuration
 
 ---
 
