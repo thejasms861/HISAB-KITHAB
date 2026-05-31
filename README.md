@@ -56,17 +56,19 @@ Hisab-Kithab was developed to provide a secure and centralized platform for mana
 
 The application follows a modern full-stack architecture:
 
+```text
 Frontend (React + Vite)
-↓
+        ↓
 REST API Communication (Axios)
-↓
+        ↓
 Django REST Framework Backend
-↓
+        ↓
 JWT Authentication Layer
-↓
+        ↓
 Business Logic & Reporting Services
-↓
+        ↓
 SQLite / PostgreSQL Database
+```
 
 Core Modules:
 
@@ -75,6 +77,26 @@ Core Modules:
 * Transaction Processing
 * Financial Analytics Dashboard
 * Reporting & PDF Generation
+
+---
+
+## 🔄 Development Workflow
+
+```text
+User Action
+      ↓
+React Frontend
+      ↓
+Axios API Requests
+      ↓
+Django REST API
+      ↓
+Business Logic Layer
+      ↓
+Database Operations
+      ↓
+Updated Financial Records & Reports
+```
 
 ---
 
@@ -167,8 +189,9 @@ Planned enhancements include:
 
 ---
 
---- ## 📁 Project Structure
-text
+## 📁 Project Structure
+
+```text
 HISAB-KITHAB/
 ├── backend/               # Django REST API Backend
 │   ├── accounts/          # User authentication and management
@@ -177,6 +200,7 @@ HISAB-KITHAB/
 │   ├── reports/           # Financial reporting API
 │   ├── hisabkitab/        # Core Django settings
 │   └── requirements.txt   # Python dependencies
+│
 └── frontend/              # React/Vite Frontend
     ├── src/
     │   ├── components/    # Reusable React components
@@ -185,6 +209,70 @@ HISAB-KITHAB/
     │   └── ...
     ├── package.json       # Node.js dependencies
     └── tailwind.config.js # Tailwind CSS configuration
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+* Python 3.8+
+* Node.js 18+
+* Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/thejasms861/HISAB-KITHAB.git
+cd HISAB-KITHAB
+```
+
+### 2. Backend Setup
+
+```bash
+cd backend
+
+python -m venv venv
+
+# Windows
+venv\Scripts\activate
+
+# macOS/Linux
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py createsuperuser
+
+python manage.py runserver
+```
+
+Backend API:
+
+```text
+http://localhost:8000
+```
+
+### 3. Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend Application:
+
+```text
+http://localhost:5173
+```
 
 ---
 
@@ -192,7 +280,7 @@ HISAB-KITHAB/
 
 Hisab-Kithab is a full-stack financial record management platform built using React, Django REST Framework, and JWT authentication. The system enables users to manage customer transactions, track balances, visualize financial data through dashboards, and generate automated reports.
 
-The project demonstrates practical experience in full-stack development, API design, authentication systems, financial data management, reporting workflows, and user-focused software engineering. It also reflects an engineering approach focused on solving real-world operational problems through technology.
+The project demonstrates practical experience in full-stack development, API design, authentication systems, financial data management, reporting workflows, and user-focused software engineering. It reflects an engineering approach focused on solving real-world operational problems through technology.
 
 ---
 
@@ -201,9 +289,9 @@ The project demonstrates practical experience in full-stack development, API des
 Contributions are welcome and greatly appreciated.
 
 1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ---
